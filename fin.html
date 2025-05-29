@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 Para Nirvana 🌟</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6ec1e4;
+            --accent: #ff5873;
+            --white: #ffffff;
+            --bg: #f0f8ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(to right, #dff3fd, #fef1f3);
+            font-family: 'Quicksand', sans-serif;
+            color: var(--accent);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            text-align: center;
+            animation: floatCard 6s ease-in-out infinite;
+        }
+
+        @keyframes floatCard {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .title {
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .img-fluid {
+            width: 280px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            animation: popIn 1.5s ease;
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .text {
+            font-size: 20px;
+            margin: 20px 0;
+            color: var(--accent);
+        }
+
+        .heart-button {
+            padding: 12px 28px;
+            font-size: 18px;
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: background 0.3s ease;
+        }
+
+        .heart-button:hover {
+            background: #5aa9cc;
+        }
+
+        .heart-button::after {
+            content: "💙";
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 24px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.5); opacity: 0.7; }
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="title">Nirvana 💙</div>
+        <img src="img/n.jpeg" alt="Retrato de Nirvana" class="img-fluid">
+        <p class="text">¡La niña más hermosa del universo! Tu sonrisa ilumina hasta los días más nublados. ✨</p>
+        <button class="heart-button">Con cariño 💙</button>
+    </div>
+
+    <audio src="Vale la Pena.mp3" autoplay loop></audio>
+</body>
+</html>
