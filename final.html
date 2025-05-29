@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un momento más contigo...</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue: #6ec1e4;
+            --pink: #ff6b81;
+            --white: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f0f8ff, #ffe6f0);
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: var(--pink);
+        }
+
+        .container {
+            padding: 30px;
+            border-radius: 25px;
+            background-color: rgba(255,255,255,0.9);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: var(--blue);
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+
+        .gif {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        p {
+            font-size: 20px;
+            margin: 20px 0;
+            color: var(--pink);
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Y aún tengo más para ti 💌</h1>
+        <img src="kiss.gif" alt="Besos" class="gif">
+        <p>Espero que ye haya gustadd. 💫</p>
+    </div>
+
+    <audio src="ChachaCut.mp3" autoplay loop></audio>
+
+</body>
+</html>
